@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anurag Rajak | Software Engineer & Full-Stack Developer</title>
+  <meta name="description"
+    content="Portfolio of Anurag Rajak - Software Engineer, Full-Stack Developer & AI Enthusiast. Building real-world applications and innovative software solutions.">
+  <meta name="keywords"
+    content="Anurag Rajak, Software Engineer, Full-Stack Developer, AI Enthusiast, React, Next.js, Node.js, Python, BIST Bhopal">
+  <meta name="author" content="Anurag Rajak">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Anurag Rajak | Software Engineer Portfolio">
+  <meta property="og:description"
+    content="Software Engineer | Full-Stack Developer | AI Enthusiast. Explore featured projects, experience, and skills.">
+  <meta property="og:image" content="assets/anurag_portrait.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232563EB'/><text x='50%' y='68%' font-family='sans-serif' font-size='56' font-weight='800' fill='white' text-anchor='middle'>AR</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Caveat for handwritten notes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="mode-page">
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="mainNavbar">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" id="brandLogo">
+        <div class="logo-badge">
+          <span class="ar-monogram">AR</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Anurag Rajak</span>
+          <span class="brand-role">Software Engineer</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active" data-page="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" data-page="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link" data-page="projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link" data-page="experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link" data-page="skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- View Mode Switcher -->
+        <button class="view-mode-toggle" id="viewModeToggle"
+          title="Switch between Slide/Page Mode and Continuous Scroll">
+          <svg class="mode-icon-paged" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M3 9h18" />
+          </svg>
+          <span class="view-mode-label">Page View</span>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn-talk" id="btnNavTalk">
+          <span>Let's Talk</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Multi-Page App Container -->
+  <main class="pages-wrapper" id="pagesWrapper">
+
+    <!-- ============================================== -->
+    <!-- 1. HOME PAGE                                  -->
+    <!-- ============================================== -->
+    <section class="page-section active" id="home" data-section="home">
+      <div class="page-inner home-layout">
+
+        <!-- Left Hero Content -->
+        <div class="hero-left">
+          <!-- Availability Pill -->
+          <div class="status-pill">
+            <span class="pulse-dot"></span>
+            <span class="pill-text">Available for opportunities</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="hero-title">
+            Hi, I'm <br>
+            <span class="hero-name">Anurag Rajak</span>
+          </h1>
+
+          <!-- Role Subtitle -->
+          <p class="hero-subtitle">
+            Software Engineer <span class="divider">|</span> Full-Stack Developer <span class="divider">|</span> AI
+            Enthusiast
+          </p>
+
+          <!-- Bio Description -->
+          <p class="hero-description">
+            I'm an IT student and developer who enjoys building real-world applications, solving complex problems, and
+            learning new technologies. I specialize in full-stack web development, AI-powered solutions, and creating
+            products that make a real impact.
+          </p>
+
+          <!-- Primary Actions -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary" id="btnViewWork">
+              <span>View My Work</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="Anurag_Rajak_Resume.pdf" download="Anurag_Rajak_Resume.pdf" class="btn-outline"
+              id="btnDownloadResume" target="_blank">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Social Links Bar -->
+          <div class="social-links-bar">
+            <a href="https://github.com/anuragraja" target="_blank" rel="noopener noreferrer" class="social-chip"
+              title="GitHub Profile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/anurag-rajak-it" target="_blank" rel="noopener noreferrer"
+              class="social-chip" title="LinkedIn Profile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:anuragrajak7974@gmail.com" class="social-chip" title="Send Email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email</span>
+            </a>
+            <a href="https://twitter.com/anuragraja" target="_blank" rel="noopener noreferrer" class="social-chip"
+              title="Twitter / X Profile">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+              <span>Twitter</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Showcase -->
+        <div class="hero-right">
+          <div class="profile-card-wrapper">
+
+            <!-- Handwritten Doodle (Top Right) -->
+            <div class="doodle doodle-top">
+              <svg class="doodle-arrow-top" width="55" height="40" viewBox="0 0 60 40" fill="none" stroke="#2563EB"
+                stroke-width="1.8" stroke-linecap="round">
+                <path d="M50 8 C35 15, 20 28, 10 32 M10 32 L18 24 M10 32 L17 38" />
+              </svg>
+              <span class="doodle-text">Turning ideas into<br><strong>Real Products</strong></span>
+            </div>
+
+            <!-- Floating Badge: Education (Top Left) -->
+            <div class="floating-badge badge-education">
+              <div class="badge-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="badge-content">
+                <span class="badge-title">B.Tech (IT)</span>
+                <span class="badge-sub">BIST Bhopal</span>
+                <span class="badge-detail">2024 – 2028</span>
+                <span class="badge-highlight">CGPA: 7.49</span>
+              </div>
+            </div>
+
+            <!-- Profile Portrait Image Container -->
+            <div class="profile-image-container">
+              <img src="assets/anurag.png" alt="Anurag Rajak - Software Engineer" class="profile-portrait"
+                id="heroPortraitImg">
+              <div class="profile-overlay-gradient"></div>
+            </div>
+
+            <!-- Floating Badge: Innovative Solutions (Middle Right) -->
+            <div class="floating-badge badge-solutions">
+              <div class="badge-code-icon">&lt;/&gt;</div>
+              <div class="badge-content">
+                <span class="badge-title">Building</span>
+                <span class="badge-bold">Innovative<br>Solutions</span>
+              </div>
+            </div>
+
+            <!-- Handwritten Doodle (Bottom Right) -->
+            <div class="doodle doodle-bottom">
+              <svg class="doodle-arrow-bottom" width="50" height="35" viewBox="0 0 50 35" fill="none" stroke="#2563EB"
+                stroke-width="1.8" stroke-linecap="round">
+                <path d="M8 8 C18 15, 30 18, 42 28 M42 28 L35 20 M42 28 L40 18" />
+              </svg>
+              <span class="doodle-text">Full-Stack<br>AI Projects<br><strong>Real Impact</strong></span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Bottom Metric Highlights Bar -->
+        <div class="hero-stats-grid">
+          <!-- Stat 1 -->
+          <div class="stat-card">
+            <div class="stat-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Featured Projects</span>
+              <span class="stat-sub">Real-world applications</span>
+            </div>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-card">
+            <div class="stat-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-num">7.49</span>
+              <span class="stat-label">Current CGPA</span>
+              <span class="stat-sub">4th semester</span>
+            </div>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-card">
+            <div class="stat-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                <path d="M4 22h16"></path>
+                <path d="M10 14.66V17c0 .55-.45 1-1 1H7"></path>
+                <path d="M14 14.66V17c0 .55.45 1 1 1h2"></path>
+                <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-num">2x</span>
+              <span class="stat-label">Hackathon Winner</span>
+              <span class="stat-sub">National level</span>
+            </div>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-card">
+            <div class="stat-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-num">2028</span>
+              <span class="stat-label">Expected Graduation</span>
+              <span class="stat-sub">BIST Bhopal</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 2. ABOUT PAGE                                 -->
+    <!-- ============================================== -->
+    <section class="page-section" id="about" data-section="about">
+      <div class="page-inner about-layout">
+
+        <!-- Left About Content -->
+        <div class="about-left">
+          <!-- Section Tag Pill -->
+          <div class="section-tag-pill">
+            <span class="tag-bullet"></span>
+            <span>About Me</span>
+          </div>
+
+          <!-- Heading -->
+          <h2 class="section-title">
+            Building solutions <br>
+            <span class="highlight-blue">with purpose.</span>
+          </h2>
+
+          <!-- Main Bio -->
+          <p class="about-bio">
+            I'm Anurag Rajak, an IT student and software developer passionate about building real-world applications,
+            solving complex problems, and continuously learning new technologies. I enjoy working at the intersection of
+            full-stack development and AI to create meaningful products.
+          </p>
+
+          <!-- Trait Badges Row -->
+          <div class="trait-chips-list">
+            <span class="trait-chip">
+              <span class="trait-icon">🛡️</span>
+              <span>Problem Solver</span>
+            </span>
+            <span class="trait-chip">
+              <span class="trait-icon">⚡</span>
+              <span>Quick Learner</span>
+            </span>
+            <span class="trait-chip">
+              <span class="trait-icon">👥</span>
+              <span>Team Player</span>
+            </span>
+            <span class="trait-chip highlight-chip">
+              <span class="trait-icon">⭐</span>
+              <span>Open to Opportunities</span>
+            </span>
+          </div>
+
+          <!-- Education Section -->
+          <div class="education-block">
+            <div class="education-header">
+              <div class="edu-title-wrap">
+                <span class="edu-dot"></span>
+                <h3 class="edu-heading">Education</h3>
+              </div>
+              <button class="btn-text-action" id="btnViewAcademicDetails">
+                <span>View Academic Details</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Education Timeline -->
+            <div class="timeline-tree">
+              <!-- Item 1: College -->
+              <div class="timeline-row">
+                <div class="node-marker">
+                  <span class="outer-ring"></span>
+                  <span class="inner-dot"></span>
+                </div>
+                <div class="timeline-details">
+                  <div class="inst-info">
+                    <h4 class="inst-name">Bansal Institute of Science & Technology (BIST), Bhopal</h4>
+                    <p class="degree-title">B.Tech in Information Technology</p>
+                  </div>
+                  <div class="inst-meta">
+                    <span class="years-tag">2024 – 2028</span>
+                    <span class="score-tag">CGPA: 7.49 (till 4th Semester)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Class XII -->
+              <div class="timeline-row">
+                <div class="node-marker">
+                  <span class="outer-ring"></span>
+                  <span class="inner-dot"></span>
+                </div>
+                <div class="timeline-details">
+                  <div class="inst-info">
+                    <h4 class="inst-name">Holy Child Convent Higher Secondary School, Bamitha</h4>
+                    <p class="degree-title">MP-BOARD (Class XII)</p>
+                  </div>
+                  <div class="inst-meta">
+                    <span class="score-badge">76%</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: Class X -->
+              <div class="timeline-row">
+                <div class="node-marker">
+                  <span class="outer-ring"></span>
+                  <span class="inner-dot"></span>
+                </div>
+                <div class="timeline-details">
+                  <div class="inst-info">
+                    <h4 class="inst-name">Holy Child Convent Higher Secondary School, Bamitha</h4>
+                    <p class="degree-title">MP-BOARD (Class X)</p>
+                  </div>
+                  <div class="inst-meta">
+                    <span class="score-badge">71%</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right About Visual Showcase -->
+        <div class="about-right">
+          <div class="about-card-container">
+            <!-- Handwritten Doodle -->
+            <div class="doodle doodle-about">
+              <span class="doodle-text">Always Learning<br>&amp; <em>Building</em></span>
+              <svg class="doodle-swirl" width="40" height="30" viewBox="0 0 40 30" fill="none" stroke="#2563EB"
+                stroke-width="1.8">
+                <path d="M5 25 C15 5, 25 25, 35 10 M35 10 L28 12 M35 10 L33 18" stroke-linecap="round" />
+              </svg>
+            </div>
+
+            <!-- Portrait Frame -->
+            <div class="about-photo-wrapper">
+              <img src="assets/anurag.png" alt="Anurag Rajak Software Developer" class="about-portrait-img">
+            </div>
+
+            <!-- Floating Completed Badge -->
+            <div class="floating-badge badge-completed">
+              <span class="num-large">4+</span>
+              <span class="badge-label">Projects Completed</span>
+            </div>
+
+            <!-- Quick Philosophy Mini-Card -->
+            <div class="quick-fact-card">
+              <div class="fact-icon">🚀</div>
+              <div class="fact-text">
+                <strong>Focus:</strong> Scalable Full-Stack Engineering, AI Integration &amp; Clean Architecture.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 3. PROJECTS PAGE                              -->
+    <!-- ============================================== -->
+    <section class="page-section" id="projects" data-section="projects">
+      <div class="page-inner projects-layout">
+
+        <!-- Section Header -->
+        <div class="section-header-flex">
+          <div class="header-titles">
+            <div class="section-tag-pill">
+              <span class="tag-bullet"></span>
+              <span>Featured Work</span>
+            </div>
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">
+              Here are some of the projects I've built, focusing on real-world problem solving and modern technologies.
+            </p>
+          </div>
+
+          <div class="header-action-wrap">
+            <button class="btn-outline-small" id="btnFilterAllProjects">
+              <span>View All Projects</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filter-pills" id="projectFilterBar">
+          <button class="filter-pill active" data-filter="all">All Projects</button>
+          <button class="filter-pill" data-filter="ai">AI &amp; Machine Learning</button>
+          <button class="filter-pill" data-filter="fullstack">Full-Stack &amp; Web</button>
+          <button class="filter-pill" data-filter="fintech">FinTech &amp; Utility</button>
+        </div>
+
+        <!-- Projects Grid (4 Key Projects) -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Project 1: SmartWasteX -->
+          <article class="project-card" data-category="ai fullstack" data-project-id="smartwaste">
+            <div class="project-preview-wrap">
+              <img src="assets/smartwaste.jpg" alt="SmartWasteX UI Preview" class="project-preview-img" loading="lazy">
+              <div class="preview-overlay">
+                <button class="btn-inspect" data-action="view-details" data-project="smartwaste">Inspect
+                  Architecture</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3 class="project-name">SmartWasteX</h3>
+                <div class="badge-chips">
+                  <span class="tech-tag tag-ai">AI</span>
+                  <span class="tech-tag tag-web">Web</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                AI-Powered smart waste management &amp; recycling ecosystem with real-time complaint tracking, GPS-based
+                location detection and role-based dashboards.
+              </p>
+              <div class="project-footer">
+                <button class="btn-view-project" data-action="view-details" data-project="smartwaste">
+                  <span>View Project</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </button>
+                <div class="project-stack-icons" title="React.js, Node.js, MongoDB, Firebase">
+                  <span class="mini-tag">React</span>
+                  <span class="mini-tag">Node</span>
+                  <span class="mini-tag">MongoDB</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: SamadhanAI -->
+          <article class="project-card" data-category="ai" data-project-id="samadhan">
+            <div class="project-preview-wrap">
+              <img src="assets/samadhan.jpg" alt="SamadhanAI Grievance Classifier" class="project-preview-img"
+                loading="lazy">
+              <div class="preview-overlay">
+                <button class="btn-inspect" data-action="view-details" data-project="samadhan">Inspect
+                  Architecture</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3 class="project-name">SamadhanAI</h3>
+                <div class="badge-chips">
+                  <span class="tech-tag tag-ai">AI</span>
+                  <span class="tech-tag tag-nlp">NLP</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                AI-based citizen grievance classification &amp; smart routing system with automated categorization,
+                priority detection and intelligent department routing.
+              </p>
+              <div class="project-footer">
+                <button class="btn-view-project" data-action="view-details" data-project="samadhan">
+                  <span>View Project</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </button>
+                <div class="project-stack-icons" title="Python, LLM APIs, REST APIs">
+                  <span class="mini-tag">Python</span>
+                  <span class="mini-tag">LLMs</span>
+                  <span class="mini-tag">FastAPI</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: SettleMate -->
+          <article class="project-card" data-category="fintech fullstack" data-project-id="settlemate">
+            <div class="project-preview-wrap">
+              <img src="assets/settlemate.jpg" alt="SettleMate Expense Tracker" class="project-preview-img"
+                loading="lazy">
+              <div class="preview-overlay">
+                <button class="btn-inspect" data-action="view-details" data-project="settlemate">Inspect
+                  Architecture</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3 class="project-name">SettleMate</h3>
+                <div class="badge-chips">
+                  <span class="tech-tag tag-web">Web</span>
+                  <span class="tech-tag tag-fintech">FinTech</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                Smart roommate expense sharing platform to track shared costs, manage settlements and simplify group
+                expenses with automated split reconciliation.
+              </p>
+              <div class="project-footer">
+                <button class="btn-view-project" data-action="view-details" data-project="settlemate">
+                  <span>View Project</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </button>
+                <div class="project-stack-icons" title="React.js, Node.js, Express, MongoDB">
+                  <span class="mini-tag">React</span>
+                  <span class="mini-tag">Express</span>
+                  <span class="mini-tag">FinTech</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: College ERP -->
+          <article class="project-card" data-category="fullstack" data-project-id="college_erp">
+            <div class="project-preview-wrap">
+              <img src="assets/college_erp.jpg" alt="College ERP Management Platform" class="project-preview-img"
+                loading="lazy">
+              <div class="preview-overlay">
+                <button class="btn-inspect" data-action="view-details" data-project="college_erp">Inspect
+                  Architecture</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3 class="project-name">College ERP</h3>
+                <div class="badge-chips">
+                  <span class="tech-tag tag-fullstack">Full-Stack</span>
+                  <span class="tech-tag tag-erp">ERP</span>
+                </div>
+              </div>
+              <p class="project-desc">
+                Full-stack College ERP with admission, fee, student &amp; staff management, automated emails, JWT role
+                authentication and Google Drive cloud backups.
+              </p>
+              <div class="project-footer">
+                <button class="btn-view-project" data-action="view-details" data-project="college_erp">
+                  <span>View Project</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </button>
+                <div class="project-stack-icons" title="Next.js, React, Node.js, MongoDB Atlas, JWT">
+                  <span class="mini-tag">Next.js</span>
+                  <span class="mini-tag">JWT</span>
+                  <span class="mini-tag">Drive API</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 4. EXPERIENCE PAGE                            -->
+    <!-- ============================================== -->
+    <section class="page-section" id="experience" data-section="experience">
+      <div class="page-inner experience-layout">
+
+        <!-- Section Header -->
+        <div class="experience-header">
+          <div class="section-tag-pill">
+            <span class="tag-bullet"></span>
+            <span>My Journey</span>
+          </div>
+          <h2 class="section-title">Experience &amp; Internships</h2>
+          <p class="section-subtitle">
+            Here are the key learning experiences that have shaped my technical and professional journey.
+          </p>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="experience-timeline">
+
+          <!-- Role 1: Programming Intern CodeAlpha -->
+          <div class="exp-timeline-item">
+            <div class="exp-marker-col">
+              <div class="exp-avatar-badge badge-blue">
+                <span>CA</span>
+              </div>
+              <div class="exp-connecting-line"></div>
+            </div>
+            <div class="exp-content-card">
+              <div class="exp-card-header">
+                <div class="role-titles">
+                  <h3 class="role-designation">Programming Intern</h3>
+                  <div class="company-row">
+                    <span class="company-name">CodeAlpha</span>
+                    <span class="location-sep">—</span>
+                    <span class="location-type">Remote</span>
+                  </div>
+                </div>
+                <div class="role-duration-badge">
+                  <span>Mar 2026 – Apr 2026</span>
+                </div>
+              </div>
+              <ul class="role-duties-list">
+                <li>
+                  <span class="bullet-dot"></span>
+                  <span>Developed C++ programming projects applying Object-Oriented Programming concepts including
+                    classes, objects, inheritance, functions and STL.</span>
+                </li>
+                <li>
+                  <span class="bullet-dot"></span>
+                  <span>Applied debugging, algorithmic thinking and code optimization techniques to develop efficient
+                    and maintainable solutions.</span>
+                </li>
+              </ul>
+              <div class="role-tags">
+                <span class="chip-sm">C++</span>
+                <span class="chip-sm">Object-Oriented Programming</span>
+                <span class="chip-sm">STL</span>
+                <span class="chip-sm">Data Structures</span>
+                <span class="chip-sm">Code Optimization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2: AI Intern Nexians Academy -->
+          <div class="exp-timeline-item">
+            <div class="exp-marker-col">
+              <div class="exp-avatar-badge badge-dark">
+                <span>N</span>
+              </div>
+            </div>
+            <div class="exp-content-card">
+              <div class="exp-card-header">
+                <div class="role-titles">
+                  <h3 class="role-designation">AI Intern</h3>
+                  <div class="company-row">
+                    <span class="company-name">Elix Studios</span>
+                    <span class="location-sep">,</span>
+                    <span class="location-type">Bhopal</span>
+                  </div>
+                </div>
+                <div class="role-duration-badge active-badge">
+                  <span>May 2026 – Present</span>
+                </div>
+              </div>
+              <ul class="role-duties-list">
+                <li>
+                  <span class="bullet-dot"></span>
+                  <span>Working on AI and full-stack development projects using modern technologies.</span>
+                </li>
+                <li>
+                  <span class="bullet-dot"></span>
+                  <span>Building real-world applications and learning LLMs, AI tools and cloud deployment.</span>
+                </li>
+                <li>
+                  <span class="bullet-dot"></span>
+                  <span>Collaborating with mentors and contributing to product development.</span>
+                </li>
+              </ul>
+              <div class="role-tags">
+                <span class="chip-sm">Artificial Intelligence</span>
+                <span class="chip-sm">LLMs</span>
+                <span class="chip-sm">Full-Stack Web</span>
+                <span class="chip-sm">Cloud Deployment</span>
+                <span class="chip-sm">Modern APIs</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Professional Certifications Showcase -->
+        <div class="certifications-section">
+          <div class="cert-header">
+            <h3 class="cert-heading">Licenses &amp; Certifications</h3>
+            <span class="cert-sub">Verified credentials and professional accomplishments</span>
+          </div>
+          <div class="cert-grid">
+            <div class="cert-card">
+              <div class="cert-icon-wrap aws">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FF9900" stroke-width="2">
+                  <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
+                </svg>
+              </div>
+              <div class="cert-body">
+                <h4 class="cert-name">AWS Cloud Certified</h4>
+                <p class="cert-desc">Certification in AWS Cloud Services &amp; Architecture</p>
+                <span class="cert-issuer">Amazon Web Services</span>
+              </div>
+            </div>
+            <div class="cert-card">
+              <div class="cert-icon-wrap cpp">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00599C" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="cert-body">
+                <h4 class="cert-name">C &amp; C++ Programming</h4>
+                <p class="cert-desc">Certification in Core C and C++ Programming &amp; STL</p>
+                <span class="cert-issuer">Verified Certificate</span>
+              </div>
+            </div>
+            <div class="cert-card">
+              <div class="cert-icon-wrap nptel">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                </svg>
+              </div>
+              <div class="cert-body">
+                <h4 class="cert-name">NPTEL Certification</h4>
+                <p class="cert-desc">Fundamentals of Object-Oriented Programming (OOP)</p>
+                <span class="cert-issuer">NPTEL / IIT Ministry of Education</span>
+              </div>
+            </div>
+            <div class="cert-card">
+              <div class="cert-icon-wrap cisco">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#049fd9" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <div class="cert-body">
+                <h4 class="cert-name">Java Certification</h4>
+                <p class="cert-desc">Certification in Java Programming &amp; Fundamentals</p>
+                <span class="cert-issuer">Cisco Networking Academy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 5. SKILLS PAGE                                -->
+    <!-- ============================================== -->
+    <section class="page-section" id="skills" data-section="skills">
+      <div class="page-inner skills-layout">
+
+        <!-- Section Header -->
+        <div class="skills-header">
+          <div class="section-tag-pill">
+            <span class="tag-bullet"></span>
+            <span>Technical Skills</span>
+          </div>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">
+            A comprehensive overview of the technologies, tools and concepts I work with.
+          </p>
+        </div>
+
+        <!-- 6 Skills Category Grid (Exact match with Panel 5) -->
+        <div class="skills-cards-grid">
+
+          <!-- Card 1: Programming Languages -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="group-icon-box blue-bg">
+                <span class="group-icon-symbol">&lt;/&gt;</span>
+              </div>
+              <h3 class="group-title">Programming Languages</h3>
+            </div>
+            <div class="tech-tags-cloud">
+              <span class="tech-item"><span class="tech-bullet c-lang">C</span> C</span>
+              <span class="tech-item"><span class="tech-bullet cpp-lang">C++</span> C++</span>
+              <span class="tech-item"><span class="tech-bullet py-lang">🐍</span> Python</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Frontend Development -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="group-icon-box blue-bg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="group-title">Frontend Development</h3>
+            </div>
+            <div class="tech-tags-cloud">
+              <span class="tech-item"><span class="tech-bullet html">5</span> HTML</span>
+              <span class="tech-item"><span class="tech-bullet css">3</span> CSS</span>
+              <span class="tech-item"><span class="tech-bullet js">JS</span> JavaScript</span>
+              <span class="tech-item"><span class="tech-bullet react">⚛</span> React.js</span>
+              <span class="tech-item"><span class="tech-bullet next">▲</span> Next.js</span>
+              <span class="tech-item"><span class="tech-bullet tailwind">≈</span> Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Backend Development -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="group-icon-box blue-bg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="group-title">Backend Development</h3>
+            </div>
+            <div class="tech-tags-cloud">
+              <span class="tech-item"><span class="tech-bullet node">⬢</span> Node.js</span>
+              <span class="tech-item"><span class="tech-bullet express">ex</span> Express.js</span>
+              <span class="tech-item"><span class="tech-bullet rest">API</span> RESTful APIs</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Databases -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="group-icon-box blue-bg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="group-title">Databases</h3>
+            </div>
+            <div class="tech-tags-cloud">
+              <span class="tech-item"><span class="tech-bullet sql">🐬</span> SQL</span>
+              <span class="tech-item"><span class="tech-bullet mongo">🍃</span> MongoDB</span>
+              <span class="tech-item"><span class="tech-bullet atlas">☁</span> MongoDB Atlas</span>
+            </div>
+          </div>
+
+          <!-- Card 5: Cloud & DevOps -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="group-icon-box blue-bg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <h3 class="group-title">Cloud &amp; DevOps</h3>
+            </div>
+            <div class="tech-tags-cloud">
+              <span class="tech-item"><span class="tech-bullet aws">☁</span> AWS</span>
+              <span class="tech-item"><span class="tech-bullet docker">🐳</span> Docker</span>
+              <span class="tech-item"><span class="tech-bullet linux">🐧</span> Linux</span>
+              <span class="tech-item"><span class="tech-bullet git">⎇</span> Git</span>
+              <span class="tech-item"><span class="tech-bullet github">🐙</span> GitHub</span>
+              <span class="tech-item"><span class="tech-bullet cicd">⚙</span> CI/CD</span>
+              <span class="tech-item"><span class="tech-bullet vercel">▲</span> Vercel</span>
+            </div>
+          </div>
+
+          <!-- Card 6: Core Concepts -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="group-icon-box blue-bg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                  <line x1="9" y1="18" x2="15" y2="18"></line>
+                  <line x1="10" y1="22" x2="14" y2="22"></line>
+                  <path
+                    d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="group-title">Core Concepts</h3>
+            </div>
+            <div class="tech-tags-cloud">
+              <span class="tech-item"><span class="tech-bullet dsa">💡</span> DSA</span>
+              <span class="tech-item"><span class="tech-bullet os">💻</span> Operating System</span>
+              <span class="tech-item"><span class="tech-bullet dbms">🗄</span> DBMS</span>
+              <span class="tech-item"><span class="tech-bullet oop">🧩</span> OOP</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Additional Skills & Strengths Footer Banner -->
+        <div class="skills-extra-banner">
+          <div class="extra-col">
+            <span class="extra-label">Developer Tools:</span>
+            <div class="extra-tags">
+              <span class="tag-subtle">Postman</span>
+              <span class="tag-subtle">VS Code</span>
+              <span class="tag-subtle">Git CLI</span>
+              <span class="tag-subtle">Google Cloud Console</span>
+            </div>
+          </div>
+          <div class="extra-col">
+            <span class="extra-label">Interpersonal Skills:</span>
+            <div class="extra-tags">
+              <span class="tag-subtle">Effective Communication</span>
+              <span class="tag-subtle">Agile Teamwork</span>
+              <span class="tag-subtle">Leadership</span>
+              <span class="tag-subtle">Time Management</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================== -->
+    <!-- 6. CONTACT PAGE                               -->
+    <!-- ============================================== -->
+    <section class="page-section" id="contact" data-section="contact">
+      <div class="page-inner contact-layout">
+
+        <!-- Left Contact Info -->
+        <div class="contact-left">
+          <div class="section-tag-pill">
+            <span class="tag-bullet"></span>
+            <span>Get in Touch</span>
+          </div>
+
+          <h2 class="contact-headline">
+            Let's build something <br>
+            <span class="highlight-blue">meaningful together.</span>
+          </h2>
+
+          <p class="contact-subtext">
+            I'm always open to discussing new opportunities, interesting projects, or just having a chat about
+            technology.
+          </p>
+
+          <!-- Contact Cards List -->
+          <div class="contact-cards-list">
+
+            <!-- Card 1: Email -->
+            <a href="mailto:anuragrajak7974@gmail.com" class="contact-tile" id="contactTileEmail">
+              <div class="tile-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="tile-content">
+                <span class="tile-label">Email</span>
+                <span class="tile-value">anuragrajak7974@gmail.com</span>
+              </div>
+              <button class="btn-copy-tile" data-copy="anuragrajak7974@gmail.com" title="Copy Email">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </a>
+
+            <!-- Card 2: GitHub -->
+            <a href="https://github.com/anuragraja" target="_blank" rel="noopener noreferrer" class="contact-tile">
+              <div class="tile-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+              </div>
+              <div class="tile-content">
+                <span class="tile-label">GitHub</span>
+                <span class="tile-value">anuragraja</span>
+              </div>
+              <span class="tile-arrow">↗</span>
+            </a>
+
+            <!-- Card 3: LinkedIn -->
+            <a href="https://linkedin.com/in/anurag-rajak-it" target="_blank" rel="noopener noreferrer"
+              class="contact-tile">
+              <div class="tile-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                </svg>
+              </div>
+              <div class="tile-content">
+                <span class="tile-label">LinkedIn</span>
+                <span class="tile-value">anurag-rajak-it</span>
+              </div>
+              <span class="tile-arrow">↗</span>
+            </a>
+
+            <!-- Card 4: Phone -->
+            <a href="tel:+916268311161" class="contact-tile">
+              <div class="tile-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div class="tile-content">
+                <span class="tile-label">Phone</span>
+                <span class="tile-value">+91-6268311161</span>
+              </div>
+              <button class="btn-copy-tile" data-copy="+916268311161" title="Copy Phone">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Right Contact Form Card -->
+        <div class="contact-right">
+          <div class="contact-form-card">
+            <h3 class="form-title">Send me a message</h3>
+            <p class="form-subtitle">I'll get back to you as soon as possible.</p>
+
+            <form id="contactForm" class="message-form" novalidate>
+              <!-- Field: Full Name -->
+              <div class="form-group">
+                <label for="userName" class="field-label">Full Name</label>
+                <input type="text" id="userName" name="name" class="form-input" placeholder="Your name" required
+                  autocomplete="name">
+                <span class="field-error" id="nameError">Please enter your name.</span>
+              </div>
+
+              <!-- Field: Email -->
+              <div class="form-group">
+                <label for="userEmail" class="field-label">Email</label>
+                <input type="email" id="userEmail" name="email" class="form-input" placeholder="you@example.com"
+                  required autocomplete="email">
+                <span class="field-error" id="emailError">Please enter a valid email address.</span>
+              </div>
+
+              <!-- Field: Message -->
+              <div class="form-group">
+                <label for="userMessage" class="field-label">Message</label>
+                <textarea id="userMessage" name="message" class="form-textarea" rows="4"
+                  placeholder="Tell me about your idea or opportunity..." required></textarea>
+                <span class="field-error" id="messageError">Please write your message.</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn-submit" id="btnSubmitMessage">
+                <span>Send Message</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+
+            <!-- Success Notice -->
+            <div class="form-feedback success-notice" id="formSuccessMsg">
+              <div class="feedback-icon">✓</div>
+              <div class="feedback-text">
+                <strong>Thank you!</strong> Your message has been sent. Anurag will reach out to you shortly.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================== -->
+  <!-- MODAL: Academic Details                       -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="academicModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge">Academic Records</span>
+          <h3 class="modal-heading">Education &amp; Qualifications</h3>
+        </div>
+        <button class="btn-modal-close" id="btnCloseAcademicModal" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+
+        <div class="academic-record-card">
+          <div class="record-top">
+            <h4 class="record-title">Bansal Institute of Science &amp; Technology (BIST)</h4>
+            <span class="record-badge primary">2024 – 2028</span>
+          </div>
+          <p class="record-field"><strong>Degree:</strong> Bachelor of Technology (B.Tech)</p>
+          <p class="record-field"><strong>Branch:</strong> Information Technology (IT)</p>
+          <p class="record-field"><strong>Location:</strong> Bhopal, Madhya Pradesh, India</p>
+          <p class="record-field highlight"><strong>Academic Standing:</strong> CGPA: 7.49 (till 4th Semester)</p>
+          <div class="courses-studied">
+            <span class="course-pill">Data Structures &amp; Algorithms</span>
+            <span class="course-pill">Object Oriented Programming</span>
+            <span class="course-pill">Database Management Systems</span>
+            <span class="course-pill">Operating Systems</span>
+            <span class="course-pill">Computer Networks</span>
+            <span class="course-pill">Software Engineering</span>
+          </div>
+        </div>
+
+        <div class="academic-record-card">
+          <div class="record-top">
+            <h4 class="record-title">Holy Child Convent Higher Secondary School</h4>
+            <span class="record-badge">MP-BOARD Class XII</span>
+          </div>
+          <p class="record-field"><strong>Location:</strong> Bamitha, Madhya Pradesh, India</p>
+          <p class="record-field highlight"><strong>Result:</strong> 76% (Distinction)</p>
+          <p class="record-field"><strong>Stream:</strong> Physics, Chemistry, Mathematics (PCM)</p>
+        </div>
+
+        <div class="academic-record-card">
+          <div class="record-top">
+            <h4 class="record-title">Holy Child Convent Higher Secondary School</h4>
+            <span class="record-badge">MP-BOARD Class X</span>
+          </div>
+          <p class="record-field"><strong>Location:</strong> Bamitha, Madhya Pradesh, India</p>
+          <p class="record-field highlight"><strong>Result:</strong> 71% (First Division)</p>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <a href="Anurag_Rajak_Resume.pdf" download="Anurag_Rajak_Resume.pdf" class="btn-primary-small">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download Complete Resume</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================== -->
+  <!-- MODAL: Project Detail Inspector               -->
+  <!-- ============================================== -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-lg">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge" id="modalProjectTag">Architecture &amp; Features</span>
+          <h3 class="modal-heading" id="modalProjectTitle">Project Details</h3>
+        </div>
+        <button class="btn-modal-close" id="btnCloseProjectModal" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-project-preview">
+          <img src="assets/smartwaste.jpg" alt="Project Screenshot" id="modalProjectImg" class="modal-img-preview">
+        </div>
+        <div class="modal-project-content">
+          <h4 class="content-subhead">Overview</h4>
+          <p class="content-text" id="modalProjectDesc"></p>
+
+          <h4 class="content-subhead">Key Features &amp; Architecture</h4>
+          <ul class="features-bullet-list" id="modalProjectFeatures"></ul>
+
+          <h4 class="content-subhead">Technologies Used</h4>
+          <div class="modal-tech-chips" id="modalProjectTech"></div>
+        </div>
+      </div>
+      <div class="modal-footer project-modal-footer">
+        <a href="https://github.com/anuragraja" target="_blank" rel="noopener noreferrer" class="btn-outline-small"
+          id="modalGitBtn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+          <span>View GitHub Repository</span>
+        </a>
+        <a href="#contact" class="btn-primary-small" id="modalContactBtn">
+          <span>Discuss Project</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toastNotice"></div>
+
+  <!-- Page Navigation Footer Controls (in Page Mode) -->
+  <footer class="page-footer-dock">
+    <div class="dock-container">
+      <button class="dock-arrow" id="btnPrevPage" title="Previous Page">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <div class="dock-pagination">
+        <span class="dock-cur-page" id="dockCurrentPage">1</span>
+        <span class="dock-slash">/</span>
+        <span class="dock-total-page">6</span>
+        <span class="dock-page-name" id="dockPageName">Home</span>
+      </div>
+      <button class="dock-arrow" id="btnNextPage" title="Next Page">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
